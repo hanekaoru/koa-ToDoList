@@ -107,6 +107,7 @@ module.exports = {
     "DELETE /api/todos/:id": async(ctx, next) => {
 
         var i = 0, 
+            l = todos.length,
             index = -1;
 
         for (; i < l; i++) {
